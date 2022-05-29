@@ -1,4 +1,12 @@
 terraform {
+
+  required_providers {
+    cloudflare = {
+      source = "cloudflare/cloudflare"
+      version = "~> 3"
+    }
+  }
+
   backend "remote" {
     organization = "doublevcodes"
     workspaces {
