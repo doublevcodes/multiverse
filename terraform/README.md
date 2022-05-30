@@ -12,7 +12,8 @@ Multiverse uses Terraform to manage and setup infrastructure as code.
 
 ## Module Reference
 
-| Name    | Purpose                                             |
-|---------|-----------------------------------------------------|
-| `dns`   | Manages DNS records through the Cloudflare provider |
-| `rules` | Manages Cloudflare rules i.e. page rules            |
+| Name      | Purpose                                             |
+|-----------|-----------------------------------------------------|
+| `buckets` | Manages Backblaze B2 buckets                        |
+| `dns`     | Manages DNS records through the Cloudflare provider |
+| `rules`   | Manages Cloudflare rules i.e. page rules            |
