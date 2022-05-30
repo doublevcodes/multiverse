@@ -26,5 +26,6 @@ resource "cloudflare_record" "git_redirect" {
 resource "cloudflare_record" "test_record" {
   zone_id = var.zone_id
   type    = "TXT"
+  name    = "@"
   value   = "test" 
 }
