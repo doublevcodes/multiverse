@@ -1,5 +1,4 @@
 terraform {
-
   required_providers {
     cloudflare = {
       source  = "cloudflare/cloudflare"
@@ -23,12 +22,12 @@ terraform {
 # Provider secrets are stored in Terraform Cloud secrets.
 
 provider "cloudflare" {
-  # email = "$CLOUDFLARE_EMAIL"
+  # email     = "$CLOUDFLARE_EMAIL"
   # api_token = "$CLOUDFLARE_API_TOKEN"
 }
 
 provider "b2" {
-  # application_key = "$B2_APPLICATION_KEY"
+  # application_key    = "$B2_APPLICATION_KEY"
   # application_key_id = "$B2_APPLICATION_KEY_ID"
 }
 
