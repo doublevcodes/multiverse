@@ -11,8 +11,12 @@ on:
 jobs:
   
   tflint:
+  
     name: Lint Terraform
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: terraform
     
     steps:
       - name: Checkout source code
@@ -29,3 +33,18 @@ jobs:
       - name: Check Terraform formatting
         run: |
           terraform fmt -check -recursive
+
+  ansible-lint:
+  
+    name: Lint Ansible
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ansible
+        
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        
+      - name: Run ansible-lint
+        uses: ansible-community/ansible-lint-action@v6
