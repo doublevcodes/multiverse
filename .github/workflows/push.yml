@@ -24,11 +24,6 @@ jobs:
           
       - name: Setup Terraform CLI
         uses: hashicorp/setup-terraform@v2
-        
-      - name: Validate Terraform
-        run: |
-          terraform init
-          terraform validate
           
       - name: Check Terraform formatting
         run: |
