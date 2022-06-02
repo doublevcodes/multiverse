@@ -1,8 +1,0 @@
-all:
-  hosts:
-    tesseract:
-      ansible_host: tesseract.multiverse.vivaanverma.com
-
-  children:
-    multiverse:
-      tesseract:
