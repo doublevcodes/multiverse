@@ -20,7 +20,7 @@ jobs:
     
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
           
       - name: Setup Terraform CLI
         uses: hashicorp/setup-terraform@v2
@@ -39,7 +39,7 @@ jobs:
         
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         
       - name: Run ansible-lint
         uses: ansible-community/ansible-lint-action@v6
